@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hepatitis page</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top_nav">
+            <a href="./registration.html">Register here</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <nav class="side-nav col-4">
+            <ul>
+                <li><a href="./personalinfo.html">Personal Information</a></li>
+                <li><a href="./riskfactor.html">Risk Factor Information</a></li>
+                <li><a href="./hepatitis_form.html">Hepatitis B Pregnant Women Reporting</a></li>
+                <li><a href="./congenital_form.html">Congenital Syphilis Form</a></li>
+                <li><a href="./gonorrhea_form.html">Chlamydia & Gonorrhea Reporting</a></li>
+            </ul>
+        </nav>
+        <article class="col-8" style="margin-bottom: 60px;">
+            <form class="hep-form" action="" method="POST">
+                <h2>Hepatitis B Infected Pregnant Woman Reporting Form </h2>
+                <div class="input-hold">
+                    <div>
+                        <label for="l-name">Last name:</label>
+                        <input type="text" id="l-name">
+                    </div>
+                    <div>
+                        <label for="f-name">First name:</label>
+                        <input type="text" id="f-name">
+                    </div>
+                </div>
+                <div class="input-hold">
+                    <div>
+                        <label for="dob">Date of birth:</label>
+                        <input type="date" id="dob">
+                    </div>
+                    <div>
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone">
+                    </div>
+                </div>
+                <div class="input-hold">
+                    <div>
+                        <label for="address">Address:</label>
+                        <input type="date" id="address">
+                    </div>
+                    <div>
+                        <label for="zip">State Zip code:</label>
+                        <input type="number" id="zip">
+                    </div>
+                </div>
+
+                <div class="check">
+                    <label for="race">Race:</label>
+                    <div style="display: flex;">
+                        <input type="checkbox" value="white">
+                        <label for="white">White</label>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="race" value="black">
+                        <label for="black">Black</label>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="race" value="asia">
+                        <label for="asia">Asian</label>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="race" value="other">
+                        <label for="other">Others</label>
+                    </div>
+
+                </div>
+                <div class="input-hold" style="padding-bottom: 30px;">
+                    <div>
+                        <label for="country">Country of birth:</label>
+                        <input type="text" id="country">
+                    </div>
+                    <div>
+                        <label for="lan">Primary Language</label>
+                        <input type="text" id="lan">
+                    </div>
+                </div>
+                <div style=" width: 50%; margin: 20px auto;">
+                    <button class="sub-button" type="submit">Submit form</button>
+                </div>
+            </form>
+        </article>
+    </section>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
+        <p>&copy; 2024 STDInsight. All Rights Reserved.</p>
+        <p>
+          <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+          <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Terms of Service</a> |
+          <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Contact Us</a>
+        </p>
+      </footer>
+</body>
+
+</html>

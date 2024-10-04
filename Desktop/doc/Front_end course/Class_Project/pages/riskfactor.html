@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>riskfactor page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+            .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top_nav">
+            <a href="./registration.html">Register here</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <nav class="side-nav col-4">
+            <ul>
+                <li><a href="./personalinfo.html">Personal Information</a></li>
+                <li><a href="./riskfactor.html">Risk Factor Information</a></li>
+                <li><a href="./hepatitis_form.html">Hepatitis B Pregnant Women Reporting</a></li>
+                <li><a href="./congenital_form.html">Congenital Syphilis Form</a></li>
+                <li><a href="./gonorrhea_form.html">Chlamydia & Gonorrhea Reporting</a></li>
+            </ul>
+        </nav>
+        <article class="col-8" style="margin-bottom: 60px;">
+            <div class="container">
+                <h2>Risk Factor Information</h2>
+                <form action="submit_risk_factors.html" method="POST">
+                  
+                  <label for="partners">Number of Sexual Partners (last 12 months):</label>
+                  <select id="partners" name="partners" required>
+                    <option value="1">1</option>
+                    <option value="2-5">2-5</option>
+                    <option value="6-10">6-10</option>
+                    <option value="10+">10+</option>
+                  </select>
+            
+                  <label for="condom-use">Condom Use:</label>
+                  <select id="condom-use" name="condom-use" required>
+                    <option value="always">Always</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="never">Never</option>
+                  </select>
+            
+                  <label for="drug-use">Injection Drug Use:</label>
+                  <select id="drug-use" name="drug-use" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+            
+                  <label for="previous-stds">Previous STD Diagnoses:</label>
+                  <select id="previous-stds" name="previous-stds" multiple required>
+                    <option value="chlamydia">Chlamydia</option>
+                    <option value="gonorrhea">Gonorrhea</option>
+                    <option value="syphilis">Syphilis</option>
+                    <option value="hepatitis-b">Hepatitis B</option>
+                    <option value="hiv">HIV</option>
+                    <option value="none">None</option>
+                  </select>
+            
+                  <label for="hiv-status">Known HIV Status:</label>
+                  <select id="hiv-status" name="hiv-status" required>
+                    <option value="positive">Positive</option>
+                    <option value="negative">Negative</option>
+                    <option value="unknown">Unknown</option>
+                  </select>
+            
+                  <label for="vaccination">Hepatitis B Vaccination:</label>
+                  <select id="vaccination" name="vaccination" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+            
+                  <label for="pregnancy-status">Currently Pregnant? (For women):</label>
+                  <select id="pregnancy-status" name="pregnancy-status" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="not-applicable">Not Applicable</option>
+                  </select>
+            
+                  <button type="submit">Submit Risk Factors</button>
+                </form>
+              </div>
+            
+        </article>
+   </section>
+   <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%; margin-top: 70px;">
+    <p>&copy; 2024 STDInsight. All Rights Reserved.</p>
+    <p>
+      <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+      <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Terms of Service</a> |
+      <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Contact Us</a>
+    </p>
+  </footer>
+</body>
+</html>
