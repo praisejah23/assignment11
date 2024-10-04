@@ -249,6 +249,7 @@ width: 100%;
     border: none;
     width: 100%;
     cursor: pointer;
+    border-radius: 5px;
 }
 .sub-button:hover{
     background: rgb(16, 44, 16);
