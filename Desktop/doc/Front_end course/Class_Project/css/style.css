@@ -159,12 +159,6 @@ width: 100%;
     background-color: #F5F5DC;
     padding: 5px;
 }
-.patient-info{
-
-}
-.clinic-info{
-
-}
 .input-fields{
     display: flex;
     justify-content: space-between;
