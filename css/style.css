@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: #FFFAFA;
+}
+.top_nav{
+    height: 70px;
+    padding: 30px;
+    background-color: #F5F5F5;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);;
+}
+.top_nav ul{
+    display: flex;
+    gap: 50px;
+    float: right;
+}
+.top_nav ul li{
+    list-style: none;
+}
+.top_nav ul a{
+    text-decoration: none;
+    color: black;
+}
+.login_form{
+    max-width: 500px;
+    margin: 100px auto;
+   border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.login_form input{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    width: 400px;
+    border: 1px solid #F5F5F5;
+    border-radius: 2px;
+}
+.login_form label{
+    margin-left:50px ;
+}
+.login_form button{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 128, 0, 0.887);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.login_form button:hover{
+    background-color: rgb(15, 107, 15);
+    cursor: pointer;
+}
+.log{
+    background-color: grey;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.forget_pw{
+    width: 400px;
+    margin: auto;
+}
+.forget_pw p{
+    padding: 10px;
+}
+#me{
+    float: left;
+}
+
+
+.reg_form{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+   border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.reg_form input, select{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    border: 1px solid #F5F5F5;
+    border-radius: 2px;
+}
+
+.reg_form button{
+    margin-bottom: 10px;
+    background-color: rgba(0, 128, 0, 0.887);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.reg_form button:hover{
+    background-color: rgb(15, 107, 15);
+    cursor: pointer;
+}
+.log{
+    background-color: grey;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.side-nav{
+    background-color: #f5f5f57f;
+    float: left;
+}
+.side-nav ul li{
+    list-style: none;
+    padding: 20px;
+    /* border: 2px solid gray; */
+    margin: 20px 0px;
+    background-color: #F5F5F5;
+}
+.side-nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+
+[class*="col-"] {
+    width: 100%;
+  }
+
+@media only screen and (min-width: 768px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}   
+}
+.sti_form{
+width: 100%;
+}
+.sti_form h2{
+    text-align: left;
+    font-size: large;
+    background-color: gray;
+    padding: 20px;    
+}
+.sti_form h4{
+    text-align: center;
+    background-color: #F5F5DC;
+    padding: 5px;
+}
+.input-fields{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.input-fields input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+.input-holder{
+    display: flex;
+    width: 100%;
+    justify-content: last baseline;
+    border: 1px solid black;
+}
+.input-holder label{
+    padding: 20px 0px 0px 10px;
+}
+.input-text{
+    padding: 10px;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid black;    
+}
+.checks{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.checks label{
+    padding-top: 8px;
+}
+.hep-form{
+    width: 100%;
+    border-top: 4px solid grey;
+    border-radius: 5px;
+    background-color: #FFFAFA;
+}
+.hep-form label{
+    margin-bottom: 5px;
+}
+.hep-form h2{
+    text-align: center;
+    padding: 5px;
+}
+.input-hold{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.input-hold div{
+    width: 48%;
+}
+.input-hold label{
+    display: block;
+}
+.input-hold input{
+    width: 100%;
+    padding: 5px;
+}
+.check{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.check{
+    padding: 20px;
+}
+.check label{
+    margin-left: 5px;
+}
+.check input{
+    padding: 10px;
+}
+.sub-button{
+    padding: 10px 20px;
+    background-color: darkseagreen;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.sub-button:hover{
+    background: rgb(16, 44, 16);
+}

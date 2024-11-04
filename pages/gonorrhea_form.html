@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top_nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <nav class="side-nav col-4">
+            <ul>
+                <li><a href="./personalinfo.html">Personal Information</a></li>
+                <li><a href="./riskfactor.html">Risk Factor Information</a></li>
+                <li><a href="./hepatitis_form.html">Hepatitis B Pregnant Women Reporting</a></li>
+                <li><a href="./congenital_form.html">Congenital Syphilis Form</a></li>
+                <li><a href="./gonorrhea_form.html">Chlamydia & Gonorrhea Reporting</a></li>
+            </ul>
+        </nav>
+        <article class="col-8" style="margin-bottom: 60px;">
+            <form class="sti_form" action="">
+                <h2 id="first_h">STI Case Reporting Form for Chlamydia and Gonorrhea</h2>
+                <h4 id="sec_h">Clinic Information</h4>
+                <div class="clinic-info">
+                    <div class="input-fields">
+                        <div class="input-holder">
+                            <label for="date">Date:</label>
+                            <input type="text" id="date" name="date">
+                        </div>
+                        <div class="input-holder">
+                            <label for="user">Person completing form:</label>
+                            <input type="text" id="user" name="user">
+                        </div>
+                    </div>
+                    <div class="input-fields">
+                        <div class="input-holder">
+                            <label for="health">Health provider:</label>
+                            <input type="text" id="health" name="health">
+                        </div>
+                        <div class="input-holder">
+                            <label for="tel">Phone number:</label>
+                            <input type="tel" id="tel" name="tel">
+                        </div>
+                    </div>
+                </div>
+                <h4 id="sec_h">Patient's Information</h4>
+                <div class="patients-info">
+                    <div class="input-fields">
+                        <div class="input-holder">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="input-holder">
+                            <label for="dob">Date of birth:</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+                        <div class="input-holder">
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-fields">
+                        <div class="input-holder">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                        <div class="input-holder">
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="input-fields">
+                        <div class="input-holder">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+                        <div class="input-holder">
+                            <label for="state">State:</label>
+                            <input type="text" id="state" name="state">
+                        </div>
+                        <div class="input-holder">
+                            <label for="zipcode">ZIP Code:</label>
+                            <input type="text" id="zipcode" name="zipcode">
+                        </div>
+                    </div>
+                </div>
+                <h4 id="sec_h">Medical Information</h4>
+                <div class="medical-info">
+                    <div class="input-fields">
+                        <div class="input-holder">
+                            <label for="symptoms">Symptoms:</label>
+                            <textarea id="symptoms" name="symptoms"></textarea>
+                        </div>
+                        <div class="input-holder">
+                            <label for="diagnosis">Diagnosis:</label>
+                            <textarea id="diagnosis" name="diagnosis"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-fields">
+                        <div class="input-holder">
+                            <label for="treatment">Treatment:</label>
+                            <textarea id="treatment" name="treatment"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 50%; margin: 20px auto;">
+                    <button class="sub-button" type="submit">Submit form</button>
+                </div>
+            </form>
+        </article>
+    </section>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
+        <p>&copy; 2024 STDInsight. All Rights Reserved.</p>
+        <p>
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Terms of Service</a> |
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">Contact Us</a>
+        </p>
+    </footer>
+
+<script src="../script.js"></script>
+</body>
+
+</html>
