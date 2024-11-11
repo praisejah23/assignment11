@@ -1,15 +1,26 @@
 document.querySelector('.sti_form').addEventListener('submit', function(event) {
     event.preventDefault();
 
+    document.querySelectorAll('.error-message').forEach(msg => msg.remove());
 
     function validateField(id, fieldName) {
         const field = document.getElementById(id);
+        let valid = true;
+
         if (!field.value.trim()) {
-            alert(`Please fill out the ${fieldName} field.`);
-            field.focus();
-            return false;
+            displayErrorMessage(field, `Please fill out the ${fieldName} field.`);
+            valid = false;
         }
-        return true;
+
+        return valid;
+    }
+
+    function displayErrorMessage(field, message) {
+        const errorMessage = document.createElement('p');
+        errorMessage.className = 'error-message';
+        errorMessage.style.color = 'red';
+        errorMessage.textContent = message;
+        field.parentElement.appendChild(errorMessage);
     }
 
     const validations = [
@@ -27,16 +38,14 @@ document.querySelector('.sti_form').addEventListener('submit', function(event) {
         validateField('symptoms', 'Symptoms'),
         validateField('diagnosis', 'Diagnosis')
     ];
-
-
+    
     const phoneField = document.getElementById('phone');
     if (phoneField.value && (phoneField.value.length !== 10 || isNaN(phoneField.value))) {
-        alert("Please enter a valid phone number (10 digits).");
+        displayErrorMessage(phoneField, "Please enter a valid phone number (10 digits).");
         phoneField.focus();
-        return;
     }
 
-    if (validations.every(valid => valid)) {
+    if (validations.every(valid => valid) && phoneField.value.length === 10) {
         alert("Form submitted successfully!");
         event.target.submit();
     }

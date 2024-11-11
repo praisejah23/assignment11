@@ -248,3 +248,8 @@ width: 100%;
 .sub-button:hover{
     background: rgb(16, 44, 16);
 }
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
